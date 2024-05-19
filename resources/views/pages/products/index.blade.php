@@ -77,7 +77,7 @@
                                                     {{ $product->status }}
                                                 </td>
                                                 <td>
-                                                    <img src="{{ Storage::url($product->image) }}" alt="{{ $product->name }}" width="50">
+                                                    <img src="{{Storage::url($product->image)}}"  alt="{{ $product->name }}" width="100">
                                                 </td>
                                                 <td>{{ $product->created_at }}</td>
                                                 <td>

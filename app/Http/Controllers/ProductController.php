@@ -65,7 +65,7 @@ class ProductController extends Controller
 
          //image
          $image = $request->file('image');
-         $image->storeAs('public/products', $product->id . '.' . $image->extension());
+         $image->storeAs('products/', $product->id . '.' . $image->extension());
          $product->image = 'products/' . $product->id . '.' . $image->extension();
          $product->save();
 
@@ -98,10 +98,10 @@ class ProductController extends Controller
          if ($request->hasFile('image')) {
                 // Delete the old image if it exists
                 if ($product->image) {
-                    Storage::delete('public/' . $product->image);
+                    Storage::delete('products/' . $product->image);
                 }
              $image = $request->file('image');
-             $image->storeAs('public/products', $product->id . '.' . $image->extension());
+             $image->storeAs('products/', $product->id . '.' . $image->extension());
              $product->image = 'products/' . $product->id . '.' . $image->extension();
              $product->save();
 
@@ -112,6 +112,9 @@ class ProductController extends Controller
      //destroy
      public function destroy(Product $product)
      {
+        if ($product->image) {
+            Storage::delete('products/' . $product->image);
+        }
          $product->delete();
          return redirect()->route('products.index')->with('success', 'Product deleted successfully');
      }
