@@ -16,10 +16,11 @@
     <div class="main-content">
         <section class="section">
             <div class="section-header">
+                <a href="{{ route('users.index') }}" class="nav-link"><i class="fas fa-chevron-left"></i><span></span></a>
                 <h1>Advanced Forms</h1>
                 <div class="section-header-breadcrumb">
                     <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-                    <div class="breadcrumb-item"><a href="#">Forms</a></div>
+                    <div class="breadcrumb-item"><a href="{{ route('users.index') }}">Forms</a></div>
                     <div class="breadcrumb-item">Users</div>
                 </div>
             </div>
