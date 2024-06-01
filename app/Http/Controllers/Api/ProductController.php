@@ -11,9 +11,16 @@ class ProductController extends Controller
 {
     //index
     public function index(Request $request){
-        $products = Product::with('category')->when($request->status, function ($query) use ($request){
-            $query->where('status', 'like', "%($request->status)");
-        })->orderBy('favorite', 'desc')->get();
+        $products = Product::with('category')
+        ->when($request->status, function ($query) use ($request){
+            $query->where('status', 'like', "%{$request->status}%");
+        })
+        ->when($request->category, function ($query) use ($request) {
+            $query->whereHas('category', function ($query) use ($request) {
+                $query->where('name', 'like', "%{$request->category}%");
+            });
+        })
+        ->orderBy('favorite', 'desc')->get();
 
         return response()->json([
             'status'=>'success',
