@@ -16,6 +16,8 @@ class CategoryController extends Controller
                  ->orWhere('description', 'like', "%{$request->keyword}%");
          })->orderBy('id', 'desc')->paginate(10);
 
+         $categories->load('products');
+
          return response()->json([
             'status'=>'success',
             'data'=>$categories
