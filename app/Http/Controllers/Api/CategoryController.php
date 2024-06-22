@@ -11,17 +11,25 @@ class CategoryController extends Controller
      //index
      public function index(Request $request)
      {
-         $categories = Category::when($request->keyword, function ($query) use ($request) {
-             $query->where('name', 'like', "%{$request->keyword}%")
-                 ->orWhere('description', 'like', "%{$request->keyword}%");
-         })->orderBy('id', 'desc')->paginate(10);
+        $query = Category::when($request->keyword, function ($query) use ($request) {
+            $query->where('name', 'like', "%{$request->keyword}%")
+                ->orWhere('description', 'like', "%{$request->keyword}%");
+        })->orderBy('id', 'desc');
 
-         $categories->load('products');
+        // Eager load 'products' relationship
+        $categories = $query->with('products')->paginate(10);
 
-         return response()->json([
-            'status'=>'success',
-            'data'=>$categories
-        ],200);
+        return response()->json([
+            'status' => 'success',
+            'data' => $categories->items(), // Ambil items() untuk mengambil data aktual
+            'pagination' => [
+                'current_page' => $categories->currentPage(),
+                'total' => $categories->total(),
+                'per_page' => $categories->perPage(),
+                'next_page_url' => $categories->nextPageUrl(), // URL halaman berikutnya
+                'prev_page_url' => $categories->previousPageUrl(), // URL halaman sebelumnya
+            ],
+        ], 200);
      }
 
       //store
