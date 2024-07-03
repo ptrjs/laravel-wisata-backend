@@ -25,6 +25,12 @@
                     <span>Products</span></a>
             </li>
 
+
+            <li class="nav-item ">
+                <a href="{{ route('orders.index') }}" class="nav-link "><i class="fas fa-columns"></i>
+                    <span>Orders</span></a>
+            </li>
+
         </ul>
     </aside>
 </div>

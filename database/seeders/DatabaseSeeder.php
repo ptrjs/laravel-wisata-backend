@@ -25,19 +25,21 @@ class DatabaseSeeder extends Seeder
         ]);
 
         Category::factory()->create([
-            'name'=>'DOMESTIK',
+            'name'=>'Domestik',
             'description'=>'Tiket Domestik'
         ]);
 
         Category::factory()->create([
-            'name'=>'PARKIR',
-            'description'=>'Tiket Parkir'
+            'name'=>'Mancanegara',
+            'description'=>'Tiket Mancanegara'
         ]);
 
         Category::factory()->create([
-            'name'=>'CEMILAN',
-            'description'=>'Cemilan'
+            'name'=>'Parkir',
+            'description'=>'Tiket Parkir'
         ]);
+
+
 
         Product::factory(10)->create();
     }

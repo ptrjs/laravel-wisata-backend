@@ -23,7 +23,7 @@ return new class extends Migration
             //status string
             $table->enum('status', ['draft', 'published', 'archived'])->default('published');
             //string criteria
-            $table->enum('criteria', ['perorangan', 'rombongan', 'cemilan'])->default('perorangan');
+            $table->enum('criteria', ['perorangan', 'rombongan'])->default('perorangan');
             //favorite
             $table->boolean('favorite')->default(false);
 
