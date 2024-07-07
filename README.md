@@ -2,6 +2,9 @@
 Welcome to the Ticketing POS Application! This project is part of the 17th edition of the Flutter Intensive Club (FIC), organized by Mr. Saiful Bahri. The aim of this course is to help participants master Fullstack mobile and backend application development by making POS for ticketing. 
 This repo is the backend of the application, for mobile the repo is private.
 
+## Demo Video
+https://www.youtube.com/watch?v=0nbmN5X9Pn0&t=484s
+
 ## ERD Overview
 ![erd ticketing 2024-07-06 13_26_07-MySQL Workbench](https://github.com/ptrjs/laravel-wisata-backend/assets/34370936/42b7e727-b74a-4b81-87d9-983fd8ae3580)
 
