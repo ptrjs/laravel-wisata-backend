@@ -6,25 +6,25 @@ This repo is the backend of the application, for mobile the repo is private.
 ![erd ticketing 2024-07-06 13_26_07-MySQL Workbench](https://github.com/ptrjs/laravel-wisata-backend/assets/34370936/42b7e727-b74a-4b81-87d9-983fd8ae3580)
 
 ## Tech Stack
-Backend: Laravel
-Mobile: Flutter 
-Database: MySQL
+Backend: Laravel <br>
+Mobile: Flutter <br>
+Database: MySQL <br>
 
 ## Key Features
-Ticket Management: Create, update, and delete tickets.
-Reporting: Generate sales reports.
+Ticket Management: Create, update, and delete tickets. <br>
+Reporting: Generate sales reports. <br>
 
 # Getting Started
 ## Prerequisites
-PHP 8.2 or higher
-Composer
-MySQL
+PHP 8.2 or higher <br>
+Composer <br>
+MySQL <br>
 
 # Installation
-Clone the repository:
+Clone the repository: <br>
 `git clone https://github.com/ptrjs/laravel-wisata-backend.git`
 
-Navigate to the project directory:
+Navigate to the project directory: <br>
 `cd laravel-wisata-backend`
 
 Install the dependencies:
