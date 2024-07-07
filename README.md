@@ -1,3 +1,7 @@
+## ERD Design
+![erd ticketing 2024-07-06 13_26_07-MySQL Workbench](https://github.com/ptrjs/laravel-wisata-backend/assets/34370936/42b7e727-b74a-4b81-87d9-983fd8ae3580)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
