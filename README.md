@@ -27,17 +27,21 @@ Clone the repository: <br>
 Navigate to the project directory: <br>
 `cd laravel-wisata-backend`
 
-Install the dependencies:
+Install the dependencies: <br>
 `composer install`
 
-Copy the .env.example file to .env and configure your environment variables:
+Copy the .env.example file to .env and configure your environment variables: <br>
 `cp .env.example .env`
 
-Generate the application key:
+Generate the application key: <br>
 `php artisan key:generate`
 
-Run the database migrations:
-`php artisan migrate`
+Run the database migrations: <br>
+`php artisan migrate` <br>
+
+# Running the Application
+Start the local development server: <br>
+`php artisan serve` <br>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
