@@ -1,6 +1,43 @@
-## ERD Design
+## Ticketing POS Application
+Welcome to the Ticketing POS Application! This project is part of the 17th edition of the Flutter Intensive Club (FIC), organized by Mr. Saiful Bahri. The aim of this course is to help participants master Fullstack mobile and backend application development by making POS for ticketing. 
+This repo is the backend of the application, for mobile the repo is private.
+
+## ERD Overview
 ![erd ticketing 2024-07-06 13_26_07-MySQL Workbench](https://github.com/ptrjs/laravel-wisata-backend/assets/34370936/42b7e727-b74a-4b81-87d9-983fd8ae3580)
 
+## Tech Stack
+Backend: Laravel
+Mobile: Flutter 
+Database: MySQL
+
+## Key Features
+Ticket Management: Create, update, and delete tickets.
+Reporting: Generate sales reports.
+
+# Getting Started
+## Prerequisites
+PHP 8.2 or higher
+Composer
+MySQL
+
+# Installation
+Clone the repository:
+`git clone https://github.com/ptrjs/laravel-wisata-backend.git`
+
+Navigate to the project directory:
+`cd laravel-wisata-backend`
+
+Install the dependencies:
+`composer install`
+
+Copy the .env.example file to .env and configure your environment variables:
+`cp .env.example .env`
+
+Generate the application key:
+`php artisan key:generate`
+
+Run the database migrations:
+`php artisan migrate`
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
